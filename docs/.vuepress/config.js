@@ -1,3 +1,4 @@
+const path = require('path')
 module.exports = {
 	title:'前端知识体系',
 	description:'Just play',
@@ -16,11 +17,23 @@ module.exports = {
 						collapsable: false,
 						sidebarDepth: 1,
 						children:[
-							'/base/html/bom.md'
+							'/base/html/bom.md',
+							'/base/html/dom.md',
+							'/base/html/event.md',
+							'/base/html/render.md',
+							'/base/html/meta.md',
+							'/base/html/link.md',
 						]
 					}
 				]
 			}
 		]
+	},
+	configureWebpack: {
+		resolve: {
+			alias: {
+				'@img': path.resolve(__dirname, '../images')
+			}
+		}
 	}
 }
