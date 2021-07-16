@@ -23,6 +23,30 @@ module.exports = {
 							'/base/html/render.md',
 							'/base/html/meta.md',
 							'/base/html/link.md',
+							'/base/html/canvas.md',
+						]
+					},
+					{
+						title:'CSS',
+						path:'/base/css/',
+						collapsable: false,
+						sidebarDepth: 1,
+						children:[
+							'/base/css/selectors.md',
+							'/base/css/layout.md',
+							'/base/css/responsive.md',
+							'/base/css/module.md',
+						]
+					},
+					{
+						title:'JS',
+						path:'/base/js/',
+						collapsable: false,
+						sidebarDepth: 1,
+						children:[
+							'/base/js/base.md',
+							'/base/js/action-scope.md',
+
 						]
 					}
 				]
