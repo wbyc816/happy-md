@@ -97,7 +97,7 @@ TCP三次握手结束后，开始发送HTTP请求报文，请求报文由请求�
 ### 请求行(Request Line)
 
 包含请求方法, URL, 协议版本
-- 请求方法包含8徙: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, TRACE
+- 请求方法包含8种: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, TRACE
 - URL即请求地址, 由<协议>://<主机>:<端口>/<路径>?<参数> 组成
 - 协议版本即HTTP版本号
  

@@ -64,8 +64,7 @@ console.log(a.user); //追梦子
 如果返回值是一个对象，那么`this`指向的就是那个返回的**对象**，如果返回值不是一个对象那么`this`还是指向函数的**实例**
 虽然`null`也是对象，但是在这里`this`还是指向那个函数的实例，因为`null`比较**特殊**
 ``` js
-function fn()  
-{  
+function fn(){  
     this.user = '追梦子';  
     return {};  
 }
@@ -73,8 +72,7 @@ var a = new fn;
 console.log(a.user); //undefined
 ```
 ``` js
-function fn()  
-{  
+function fn(){  
     this.user = '追梦子';  
     return function(){}; // 函数也是对象
 }
@@ -82,8 +80,7 @@ var a = new fn;
 console.log(a.user); //undefined
 ```
 ``` js
-function fn()  
-{  
+function fn(){  
     this.user = '追梦子';  
     return 1;
 }
@@ -91,8 +88,7 @@ var a = new fn;
 console.log(a.user); //追梦子
 ```
 ``` js
-function fn()  
-{  
+function fn(){  
     this.user = '追梦子';  
     return undefined;
 }

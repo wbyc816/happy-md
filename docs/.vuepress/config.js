@@ -2,6 +2,7 @@ const path = require('path')
 module.exports = {
 	title:'前端知识体系',
 	description:'Just play',
+	base:'happy',
 	themeConfig:{
 		sidebarDepth: 2,
 		docsDir: 'docs',
@@ -46,9 +47,27 @@ module.exports = {
 						children:[
 							'/base/js/base.md',
 							'/base/js/action-scope.md',
+							'/base/js/prototype.md',
+							'/base/js/async.md',
 
 						]
 					}
+				]
+			},
+			{
+				title:'前端框架',
+				path:'/framework/',
+				collapsable: false, // 可选的, 默认值是 true,
+				children: [
+					{
+						title:'VUE',
+						path:'/framework/vue/',
+						collapsable: false,
+						sidebarDepth: 1,
+						children:[
+							'/framework/vue/theory.md',
+						]
+					},
 				]
 			}
 		]
